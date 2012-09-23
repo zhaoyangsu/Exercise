@@ -12,7 +12,13 @@
 		46621A78160F2BD9001D745F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46621A77160F2BD9001D745F /* CoreGraphics.framework */; };
 		46621A7E160F2BD9001D745F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46621A7C160F2BD9001D745F /* InfoPlist.strings */; };
 		46621A80160F2BD9001D745F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46621A7F160F2BD9001D745F /* main.m */; };
-		46621A84160F2BD9001D745F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46621A83160F2BD9001D745F /* AppDelegate.m */; };
+		46621A84160F2BD9001D745F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46621A83160F2BD9001D745F /* AppDelegate.mm */; };
+		4693B5E9160F4A6F006B9FE2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693B5E8160F4A6F006B9FE2 /* OpenGLES.framework */; };
+		4693B5EC160F4A76006B9FE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4693B5EB160F4A76006B9FE2 /* QuartzCore.framework */; };
+		4693B5EF160F4A91006B9FE2 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4693B5EE160F4A91006B9FE2 /* GLView.mm */; };
+		4693B5F2160F4EE2006B9FE2 /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4693B5F1160F4EE2006B9FE2 /* RenderingEngine1.cpp */; };
+		4693B5F3160F4F07006B9FE2 /* IRenderingEngine.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 4693B5F0160F4D90006B9FE2 /* IRenderingEngine.hpp */; };
+		4693B5F8160F6322006B9FE2 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4693B5F7160F6322006B9FE2 /* RenderingEngine2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +31,16 @@
 		46621A7F160F2BD9001D745F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46621A81160F2BD9001D745F /* Exercise1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise1-Prefix.pch"; sourceTree = "<group>"; };
 		46621A82160F2BD9001D745F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		46621A83160F2BD9001D745F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46621A83160F2BD9001D745F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		4693B5E8160F4A6F006B9FE2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4693B5EB160F4A76006B9FE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4693B5ED160F4A91006B9FE2 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		4693B5EE160F4A91006B9FE2 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		4693B5F0160F4D90006B9FE2 /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
+		4693B5F1160F4EE2006B9FE2 /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine1.cpp; path = ../RenderingEngine1.cpp; sourceTree = "<group>"; };
+		4693B5F5160F60B0006B9FE2 /* Simple.Vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Simple.Vert; sourceTree = "<group>"; };
+		4693B5F6160F61B8006B9FE2 /* Simple.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		4693B5F7160F6322006B9FE2 /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4693B5EC160F4A76006B9FE2 /* QuartzCore.framework in Frameworks */,
+				4693B5E9160F4A6F006B9FE2 /* OpenGLES.framework in Frameworks */,
 				46621A74160F2BD9001D745F /* UIKit.framework in Frameworks */,
 				46621A76160F2BD9001D745F /* Foundation.framework in Frameworks */,
 				46621A78160F2BD9001D745F /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +62,7 @@
 		46621A64160F2BD9001D745F = {
 			isa = PBXGroup;
 			children = (
+				4693B5F4160F608F006B9FE2 /* Shader */,
 				46621A79160F2BD9001D745F /* Exercise1 */,
 				46621A72160F2BD9001D745F /* Frameworks */,
 				46621A70160F2BD9001D745F /* Products */,
@@ -62,6 +80,8 @@
 		46621A72160F2BD9001D745F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4693B5EB160F4A76006B9FE2 /* QuartzCore.framework */,
+				4693B5E8160F4A6F006B9FE2 /* OpenGLES.framework */,
 				46621A73160F2BD9001D745F /* UIKit.framework */,
 				46621A75160F2BD9001D745F /* Foundation.framework */,
 				46621A77160F2BD9001D745F /* CoreGraphics.framework */,
@@ -72,8 +92,13 @@
 		46621A79160F2BD9001D745F /* Exercise1 */ = {
 			isa = PBXGroup;
 			children = (
+				4693B5F0160F4D90006B9FE2 /* IRenderingEngine.hpp */,
+				4693B5F1160F4EE2006B9FE2 /* RenderingEngine1.cpp */,
+				4693B5F7160F6322006B9FE2 /* RenderingEngine2.cpp */,
 				46621A82160F2BD9001D745F /* AppDelegate.h */,
-				46621A83160F2BD9001D745F /* AppDelegate.m */,
+				46621A83160F2BD9001D745F /* AppDelegate.mm */,
+				4693B5ED160F4A91006B9FE2 /* GLView.h */,
+				4693B5EE160F4A91006B9FE2 /* GLView.mm */,
 				46621A7A160F2BD9001D745F /* Supporting Files */,
 			);
 			path = Exercise1;
@@ -88,6 +113,15 @@
 				46621A81160F2BD9001D745F /* Exercise1-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4693B5F4160F608F006B9FE2 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				4693B5F5160F60B0006B9FE2 /* Simple.Vert */,
+				4693B5F6160F61B8006B9FE2 /* Simple.frag */,
+			);
+			name = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4693B5F3160F4F07006B9FE2 /* IRenderingEngine.hpp in Sources */,
 				46621A80160F2BD9001D745F /* main.m in Sources */,
-				46621A84160F2BD9001D745F /* AppDelegate.m in Sources */,
+				46621A84160F2BD9001D745F /* AppDelegate.mm in Sources */,
+				4693B5EF160F4A91006B9FE2 /* GLView.mm in Sources */,
+				4693B5F2160F4EE2006B9FE2 /* RenderingEngine1.cpp in Sources */,
+				4693B5F8160F6322006B9FE2 /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +254,7 @@
 		46621A88160F2BD9001D745F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise1/Exercise1-Prefix.pch";
 				INFOPLIST_FILE = "Exercise1/Exercise1-Info.plist";
@@ -227,6 +266,7 @@
 		46621A89160F2BD9001D745F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise1/Exercise1-Prefix.pch";
 				INFOPLIST_FILE = "Exercise1/Exercise1-Info.plist";
@@ -254,6 +294,7 @@
 				46621A89160F2BD9001D745F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
