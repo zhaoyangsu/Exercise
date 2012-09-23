@@ -1,7 +1,7 @@
 const char* SimpleVertexShader = STR(
-attribute vect4 Position;
-attribute vect4 SourceColor;
-varying vect4 DestinationColor;
+attribute vec4 Position;
+attribute vec4 SourceColor;
+varying vec4 DestinationColor;
 uniform mat4 Projection;
 uniform mat4 Modelview;
 void main(void)
