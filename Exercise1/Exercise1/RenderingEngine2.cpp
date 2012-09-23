@@ -158,7 +158,7 @@ void RenderingEngine2::ApplyOrtho(float maxX, float maxY) const
         0,0,0,1
         
     };
-    GLint projectionUniform = glGetUniformLocation(m_simpleProgram, "Peojection");
+    GLint projectionUniform = glGetUniformLocation(m_simpleProgram, "Projection");
     glUniformMatrix4fv(projectionUniform, 1, 0, &ortho[0]);
 }
 
@@ -174,7 +174,7 @@ void RenderingEngine2::ApplyRotation(float degree) const
         0,0,1,0,
         0,0,0,1
     };
-    GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "ModelView");
+    GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
     glUniformMatrix4fv(modelviewUniform, 1, 0, &zRotation[0]);
 }
 
