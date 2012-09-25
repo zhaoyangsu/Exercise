@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4668CA716102DB5006B1E63 /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4668CA516102DB5006B1E63 /* RenderingEngine1.cpp */; };
+		B4668CA916102DE1006B1E63 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4668CA816102DE1006B1E63 /* OpenGLES.framework */; };
+		B4668CAB16102DEA006B1E63 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4668CAA16102DEA006B1E63 /* QuartzCore.framework */; };
 		B4FE0253160FEAD800B84342 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FE0252160FEAD800B84342 /* UIKit.framework */; };
 		B4FE0255160FEAD800B84342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FE0254160FEAD800B84342 /* Foundation.framework */; };
 		B4FE0257160FEAD800B84342 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FE0256160FEAD800B84342 /* CoreGraphics.framework */; };
@@ -19,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4668CA216102D06006B1E63 /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		B4668CA316102D0D006B1E63 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		B4668CA416102D94006B1E63 /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
+		B4668CA516102DB5006B1E63 /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RenderingEngine1.cpp; path = ../RenderingEngine1.cpp; sourceTree = "<group>"; };
+		B4668CA816102DE1006B1E63 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B4668CAA16102DEA006B1E63 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B4FE024E160FEAD800B84342 /* Exercise2-HelloCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise2-HelloCone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FE0252160FEAD800B84342 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B4FE0254160FEAD800B84342 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4668CAB16102DEA006B1E63 /* QuartzCore.framework in Frameworks */,
+				B4668CA916102DE1006B1E63 /* OpenGLES.framework in Frameworks */,
 				B4FE0253160FEAD800B84342 /* UIKit.framework in Frameworks */,
 				B4FE0255160FEAD800B84342 /* Foundation.framework in Frameworks */,
 				B4FE0257160FEAD800B84342 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +80,8 @@
 		B4FE0251160FEAD800B84342 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4668CAA16102DEA006B1E63 /* QuartzCore.framework */,
+				B4668CA816102DE1006B1E63 /* OpenGLES.framework */,
 				B4FE0252160FEAD800B84342 /* UIKit.framework */,
 				B4FE0254160FEAD800B84342 /* Foundation.framework */,
 				B4FE0256160FEAD800B84342 /* CoreGraphics.framework */,
@@ -82,6 +95,10 @@
 				B4FE0261160FEAD800B84342 /* AppDelegate.h */,
 				B4FE0262160FEAD800B84342 /* AppDelegate.m */,
 				B4FE026F160FECCE00B84342 /* Vector.hpp */,
+				B4668CA416102D94006B1E63 /* IRenderingEngine.hpp */,
+				B4668CA516102DB5006B1E63 /* RenderingEngine1.cpp */,
+				B4668CA216102D06006B1E63 /* Matrix.hpp */,
+				B4668CA316102D0D006B1E63 /* Quaternion.hpp */,
 				B4FE0259160FEAD800B84342 /* Supporting Files */,
 			);
 			path = "Exercise2-HelloCone";
@@ -168,6 +185,7 @@
 			files = (
 				B4FE025F160FEAD800B84342 /* main.m in Sources */,
 				B4FE0263160FEAD800B84342 /* AppDelegate.m in Sources */,
+				B4668CA716102DB5006B1E63 /* RenderingEngine1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +291,7 @@
 				B4FE026E160FEAD800B84342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
