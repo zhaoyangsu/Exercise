@@ -8,7 +8,8 @@
 
 
 #pragma once
-#include <cmath.h>
+#include <cmath>
+
 const float Pi = 4 * std::atan(1.0f);
 const float TwoPi = 2 * Pi;
 template <typename T>
@@ -143,10 +144,10 @@ struct Vector3
         return v;
     }
     
-    Vector3 Cross(const Vector3 *v)const
+    Vector3 Cross(const Vector3& v)const
     {
         return Vector3(y * v.z - z * v.y,
-                       z * v.x - x * v.z
+                       z * v.x - x * v.z,
                        x * v.y - y * v.x);
     }
     
@@ -203,7 +204,7 @@ struct Vector3
     
     bool operator == (const Vector3& v)const
     {
-        return x =v.x && y = v.y && x = v.z;
+        return x ==v.x && y == v.y && x == v.z;
     }
     
     Vector3 Lerp(float t,const Vector3& v) const
