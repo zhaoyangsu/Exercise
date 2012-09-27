@@ -237,7 +237,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Shan (7W24F5L9L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Shan (7W24F5L9L6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -251,6 +252,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -263,7 +266,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Shan (7W24F5L9L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Shan (7W24F5L9L6)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -271,6 +275,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -279,11 +285,17 @@
 		B4FE026D160FEAD800B84342 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Shan (7W24F5L9L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Shan (7W24F5L9L6)";
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise2-HelloCone/Exercise2-HelloCone-Prefix.pch";
 				INFOPLIST_FILE = "Exercise2-HelloCone/Exercise2-HelloCone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -291,11 +303,17 @@
 		B4FE026E160FEAD800B84342 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Shan (7W24F5L9L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Shan (7W24F5L9L6)";
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise2-HelloCone/Exercise2-HelloCone-Prefix.pch";
 				INFOPLIST_FILE = "Exercise2-HelloCone/Exercise2-HelloCone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D438508F-35F7-4DFC-8EE5-16F3821F3CF0";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

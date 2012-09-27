@@ -56,7 +56,7 @@ static BOOL ForceES1 = NO;
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
         [[UIDevice currentDevice]beginGeneratingDeviceOrientationNotifications];
         [[NSNotificationCenter defaultCenter]addObserver:self
-                                                selector:@selector(didRotate:) name:UIDeviceBatteryLevelDidChangeNotification object:nil];
+                                                selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
         
         
     }

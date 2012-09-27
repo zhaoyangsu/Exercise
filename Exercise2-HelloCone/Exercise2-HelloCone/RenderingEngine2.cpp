@@ -152,7 +152,7 @@ void RenderEngine2::Initialize(int Width, int Height)
     
     //Set the projection matrix.
     GLuint projectionUniform = glGetUniformLocation(m_simpleProgram, "Projection");
-    mat4 projectionMatrix = mat4::Frustum(-1.6f, 1.6f, -2.4, -2.4, 5, 10);
+    mat4 projectionMatrix = mat4::Frustum(-1.6f, 1.6f, -2.4, 2.4, 5, 10);
     glUniformMatrix4fv(projectionUniform, 1, 0 , projectionMatrix.Pointer());
 }
 
@@ -180,10 +180,10 @@ void RenderEngine2::Render() const
     {
         GLsizei stride = sizeof(Vertex);
         const GLvoid* pCoords = &m_cone[0].Position.x;
-        const GLvoid* pColor = &m_cone[0].Color.x;
+        const GLvoid* pColors = &m_cone[0].Color.x;
         glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
-        glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColor);
-        glDrawArrays(GL_TRIANGLE_FAN, 0, m_disk.size());
+        glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, m_cone.size());
     }
     
     //Draw the disk that caps off the base of the cone
@@ -199,10 +199,6 @@ void RenderEngine2::Render() const
     glDisableVertexAttribArray(positionSlot);
     glDisableVertexAttribArray(colorSlot);
     
-    GLenum status =  glGetError();
-    if(status != GL_FRAMEBUFFER_COMPLETE) {
-        NSLog(@"failed to make complete framebuffer object %x", status);
-    }
 
 }
 
