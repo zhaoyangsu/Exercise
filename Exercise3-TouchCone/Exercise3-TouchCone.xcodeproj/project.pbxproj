@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884C1614601900BC97AE /* UIKit.framework */; };
+		B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884E1614601900BC97AE /* Foundation.framework */; };
+		B48F88511614601900BC97AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F88501614601900BC97AE /* CoreGraphics.framework */; };
+		B48F88571614601A00BC97AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B48F88551614601A00BC97AE /* InfoPlist.strings */; };
+		B48F88591614601A00BC97AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F88581614601A00BC97AE /* main.m */; };
+		B48F885D1614601A00BC97AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F885C1614601A00BC97AE /* AppDelegate.m */; };
+		B48F885F1614601A00BC97AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F885E1614601A00BC97AE /* Default.png */; };
+		B48F88611614601A00BC97AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F88601614601A00BC97AE /* Default@2x.png */; };
+		B48F88631614601A00BC97AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F88621614601A00BC97AE /* Default-568h@2x.png */; };
+		B48F886C161460E300BC97AE /* Simple.frag in Sources */ = {isa = PBXBuildFile; fileRef = B48F886A161460E300BC97AE /* Simple.frag */; };
+		B48F886D161460E300BC97AE /* Simple.Vert in Sources */ = {isa = PBXBuildFile; fileRef = B48F886B161460E300BC97AE /* Simple.Vert */; };
+		B48F88741614612600BC97AE /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F88731614612600BC97AE /* GLView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B48F88481614601900BC97AE /* Exercise3-TouchCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise3-TouchCone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48F884C1614601900BC97AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B48F884E1614601900BC97AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B48F88501614601900BC97AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B48F88541614601A00BC97AE /* Exercise3-TouchCone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise3-TouchCone-Info.plist"; sourceTree = "<group>"; };
+		B48F88561614601A00BC97AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B48F88581614601A00BC97AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B48F885A1614601A00BC97AE /* Exercise3-TouchCone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise3-TouchCone-Prefix.pch"; sourceTree = "<group>"; };
+		B48F885B1614601A00BC97AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B48F885C1614601A00BC97AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B48F885E1614601A00BC97AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B48F88601614601A00BC97AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B48F88621614601A00BC97AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B48F886A161460E300BC97AE /* Simple.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.frag; sourceTree = "<group>"; };
+		B48F886B161460E300BC97AE /* Simple.Vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Simple.Vert; sourceTree = "<group>"; };
+		B48F886E161460FA00BC97AE /* Matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix.hpp; sourceTree = "<group>"; };
+		B48F886F161460FA00BC97AE /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		B48F8870161460FA00BC97AE /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		B48F88711614610300BC97AE /* IRenderingEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IRenderingEngine.hpp; sourceTree = "<group>"; };
+		B48F88721614612600BC97AE /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		B48F88731614612600BC97AE /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B48F88451614601900BC97AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */,
+				B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */,
+				B48F88511614601900BC97AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B48F883D1614601900BC97AE = {
+			isa = PBXGroup;
+			children = (
+				B48F88521614601900BC97AE /* Exercise3-TouchCone */,
+				B48F884B1614601900BC97AE /* Frameworks */,
+				B48F88491614601900BC97AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B48F88491614601900BC97AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B48F88481614601900BC97AE /* Exercise3-TouchCone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B48F884B1614601900BC97AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48F884C1614601900BC97AE /* UIKit.framework */,
+				B48F884E1614601900BC97AE /* Foundation.framework */,
+				B48F88501614601900BC97AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B48F88521614601900BC97AE /* Exercise3-TouchCone */ = {
+			isa = PBXGroup;
+			children = (
+				B48F8869161460D400BC97AE /* Shader */,
+				B48F886E161460FA00BC97AE /* Matrix.hpp */,
+				B48F886F161460FA00BC97AE /* Quaternion.hpp */,
+				B48F8870161460FA00BC97AE /* Vector.hpp */,
+				B48F88711614610300BC97AE /* IRenderingEngine.hpp */,
+				B48F885B1614601A00BC97AE /* AppDelegate.h */,
+				B48F885C1614601A00BC97AE /* AppDelegate.m */,
+				B48F88721614612600BC97AE /* GLView.h */,
+				B48F88731614612600BC97AE /* GLView.m */,
+				B48F88531614601A00BC97AE /* Supporting Files */,
+			);
+			path = "Exercise3-TouchCone";
+			sourceTree = "<group>";
+		};
+		B48F88531614601A00BC97AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B48F88541614601A00BC97AE /* Exercise3-TouchCone-Info.plist */,
+				B48F88551614601A00BC97AE /* InfoPlist.strings */,
+				B48F88581614601A00BC97AE /* main.m */,
+				B48F885A1614601A00BC97AE /* Exercise3-TouchCone-Prefix.pch */,
+				B48F885E1614601A00BC97AE /* Default.png */,
+				B48F88601614601A00BC97AE /* Default@2x.png */,
+				B48F88621614601A00BC97AE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B48F8869161460D400BC97AE /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				B48F886A161460E300BC97AE /* Simple.frag */,
+				B48F886B161460E300BC97AE /* Simple.Vert */,
+			);
+			name = Shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B48F88471614601900BC97AE /* Exercise3-TouchCone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48F88661614601A00BC97AE /* Build configuration list for PBXNativeTarget "Exercise3-TouchCone" */;
+			buildPhases = (
+				B48F88441614601900BC97AE /* Sources */,
+				B48F88451614601900BC97AE /* Frameworks */,
+				B48F88461614601900BC97AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Exercise3-TouchCone";
+			productName = "Exercise3-TouchCone";
+			productReference = B48F88481614601900BC97AE /* Exercise3-TouchCone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B48F883F1614601900BC97AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = su_zhaoyang;
+			};
+			buildConfigurationList = B48F88421614601900BC97AE /* Build configuration list for PBXProject "Exercise3-TouchCone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B48F883D1614601900BC97AE;
+			productRefGroup = B48F88491614601900BC97AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B48F88471614601900BC97AE /* Exercise3-TouchCone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B48F88461614601900BC97AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F88571614601A00BC97AE /* InfoPlist.strings in Resources */,
+				B48F885F1614601A00BC97AE /* Default.png in Resources */,
+				B48F88611614601A00BC97AE /* Default@2x.png in Resources */,
+				B48F88631614601A00BC97AE /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B48F88441614601900BC97AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F88591614601A00BC97AE /* main.m in Sources */,
+				B48F885D1614601A00BC97AE /* AppDelegate.m in Sources */,
+				B48F886C161460E300BC97AE /* Simple.frag in Sources */,
+				B48F886D161460E300BC97AE /* Simple.Vert in Sources */,
+				B48F88741614612600BC97AE /* GLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B48F88551614601A00BC97AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B48F88561614601A00BC97AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B48F88641614601A00BC97AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B48F88651614601A00BC97AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B48F88671614601A00BC97AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise3-TouchCone/Exercise3-TouchCone-Prefix.pch";
+				INFOPLIST_FILE = "Exercise3-TouchCone/Exercise3-TouchCone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B48F88681614601A00BC97AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Exercise3-TouchCone/Exercise3-TouchCone-Prefix.pch";
+				INFOPLIST_FILE = "Exercise3-TouchCone/Exercise3-TouchCone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B48F88421614601900BC97AE /* Build configuration list for PBXProject "Exercise3-TouchCone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48F88641614601A00BC97AE /* Debug */,
+				B48F88651614601A00BC97AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B48F88661614601A00BC97AE /* Build configuration list for PBXNativeTarget "Exercise3-TouchCone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48F88671614601A00BC97AE /* Debug */,
+				B48F88681614601A00BC97AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B48F883F1614601900BC97AE /* Project object */;
+}
