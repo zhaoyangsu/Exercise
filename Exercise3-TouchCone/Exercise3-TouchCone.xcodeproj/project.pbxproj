@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9093723F1651D20B00C65840 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9093723D1651D1FC00C65840 /* OpenGLES.framework */; };
+		909372421651D28000C65840 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 909372401651D28000C65840 /* RenderingEngine2.cpp */; };
 		B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884C1614601900BC97AE /* UIKit.framework */; };
 		B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884E1614601900BC97AE /* Foundation.framework */; };
 		B48F88511614601900BC97AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F88501614601900BC97AE /* CoreGraphics.framework */; };
@@ -22,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9093723D1651D1FC00C65840 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		909372401651D28000C65840 /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
+		909372411651D28000C65840 /* RenderingEngine2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingEngine2.h; sourceTree = "<group>"; };
 		B48F88481614601900BC97AE /* Exercise3-TouchCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise3-TouchCone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F884C1614601900BC97AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B48F884E1614601900BC97AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9093723F1651D20B00C65840 /* OpenGLES.framework in Frameworks */,
 				B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */,
 				B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */,
 				B48F88511614601900BC97AE /* CoreGraphics.framework in Frameworks */,
@@ -79,6 +85,7 @@
 		B48F884B1614601900BC97AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9093723D1651D1FC00C65840 /* OpenGLES.framework */,
 				B48F884C1614601900BC97AE /* UIKit.framework */,
 				B48F884E1614601900BC97AE /* Foundation.framework */,
 				B48F88501614601900BC97AE /* CoreGraphics.framework */,
@@ -98,6 +105,8 @@
 				B48F885C1614601A00BC97AE /* AppDelegate.m */,
 				B48F88721614612600BC97AE /* GLView.h */,
 				B48F88731614612600BC97AE /* GLView.m */,
+				909372401651D28000C65840 /* RenderingEngine2.cpp */,
+				909372411651D28000C65840 /* RenderingEngine2.h */,
 				B48F88531614601A00BC97AE /* Supporting Files */,
 			);
 			path = "Exercise3-TouchCone";
@@ -196,6 +205,7 @@
 				B48F886C161460E300BC97AE /* Simple.frag in Sources */,
 				B48F886D161460E300BC97AE /* Simple.Vert in Sources */,
 				B48F88741614612600BC97AE /* GLView.m in Sources */,
+				909372421651D28000C65840 /* RenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +313,7 @@
 				B48F88681614601A00BC97AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
