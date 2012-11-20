@@ -11,6 +11,7 @@
 #define STRINGIFY(A)  #A
 #include "Simple.Vert"
 #include "Simple.frag"
+#include "Matrix.hpp"
 
 
 RenderingEngine2::RenderingEngine2() : m_rotationAngle(0),m_scale(1)
@@ -83,5 +84,28 @@ void RenderingEngine2::Initialize(int width, int height)
     
     GLint projectionUniform = glGetUniformLocation(m_simpleProgram, "Projection");
     mat4 projectionMatrix = mat4::Frustum(-1.6f, 1.6, -2.4, 2.4, 5, 10);
+    glUniformMatrix4fv(projectionUniform, 1, 0, projectionMatrix.Pointer());
+}
+
+
+void RenderingEngine2::Render() const
+{
+    GLuint positionSlot = glGetAttribLocation(m_simpleProgram, "Position");
+    GLuint colorSlot = glGetAttribLocation(m_simpleProgram, "SourceColor");
+    mat4 rotation = mat4::Rotate(m_rotationAngle);
+    mat4 scale = mat4::Scale(m_scale);
+    mat4 translation = mat4::Translate(0, 0, -7);
+    GLint modelviewUniform = glGetUniformLocation(m_simpleProgram, "Modelview");
+    mat4 modelviewMatrix = scale * rotation *translation;
+    GLsizei stride = sizeof(Vertex);
+    const GLvoid *pCoords = &m_coneVertices[0].Position.x;
+    const GLvoid *pColors = &m_coneVertices[0].Color.x;
+    glClearColor(0.5f, 0.5f, 0.5f, 1);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glUniformMatrix4fv(modelviewUniform, 1, 0, modelviewMatrix.Pointer());
+    glVertexAttribPointer(positionSlot, 3, GL_FLOAT, GL_FALSE, stride, pCoords);
+    glVertexAttribPointer(colorSlot, 4, GL_FLOAT, GL_FALSE, stride, pColors);
+    glEnableVertexAttribArray(positionSlot);
     
+    const GLvoid *bodyIndices = &m_coneIndices[0];
 }

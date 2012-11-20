@@ -48,7 +48,7 @@ static BOOL ForceES1 = NO;
         
         [m_context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
         
-        m_renderingEngine->Initialize(CGRectget(frame), CGRectGetHeight(frame));
+        m_renderingEngine->Initialize(frame.size.width, frame.size.height);
         [self drawView:nil];
         m_timestamp = CACurrentMediaTime();
         CADisplayLink * displayLink;

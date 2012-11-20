@@ -18,8 +18,6 @@
 		B48F885F1614601A00BC97AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F885E1614601A00BC97AE /* Default.png */; };
 		B48F88611614601A00BC97AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F88601614601A00BC97AE /* Default@2x.png */; };
 		B48F88631614601A00BC97AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B48F88621614601A00BC97AE /* Default-568h@2x.png */; };
-		B48F886C161460E300BC97AE /* Simple.frag in Sources */ = {isa = PBXBuildFile; fileRef = B48F886A161460E300BC97AE /* Simple.frag */; };
-		B48F886D161460E300BC97AE /* Simple.Vert in Sources */ = {isa = PBXBuildFile; fileRef = B48F886B161460E300BC97AE /* Simple.Vert */; };
 		B48F88741614612600BC97AE /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F88731614612600BC97AE /* GLView.m */; };
 /* End PBXBuildFile section */
 
@@ -202,8 +200,6 @@
 			files = (
 				B48F88591614601A00BC97AE /* main.m in Sources */,
 				B48F885D1614601A00BC97AE /* AppDelegate.m in Sources */,
-				B48F886C161460E300BC97AE /* Simple.frag in Sources */,
-				B48F886D161460E300BC97AE /* Simple.Vert in Sources */,
 				B48F88741614612600BC97AE /* GLView.m in Sources */,
 				909372421651D28000C65840 /* RenderingEngine2.cpp in Sources */,
 			);
