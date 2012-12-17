@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9093723F1651D20B00C65840 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9093723D1651D1FC00C65840 /* OpenGLES.framework */; };
-		909372421651D28000C65840 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 909372401651D28000C65840 /* RenderingEngine2.cpp */; };
+		90E190A7167D754E00D72BD8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E190A6167D754E00D72BD8 /* QuartzCore.framework */; };
+		90E190A9167D764100D72BD8 /* RenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 909372401651D28000C65840 /* RenderingEngine2.cpp */; };
+		90E190B6167D885400D72BD8 /* VboRenderingEngine2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90E190B4167D885400D72BD8 /* VboRenderingEngine2.cpp */; };
 		B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884C1614601900BC97AE /* UIKit.framework */; };
 		B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F884E1614601900BC97AE /* Foundation.framework */; };
 		B48F88511614601900BC97AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48F88501614601900BC97AE /* CoreGraphics.framework */; };
@@ -25,6 +27,9 @@
 		9093723D1651D1FC00C65840 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		909372401651D28000C65840 /* RenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine2.cpp; sourceTree = "<group>"; };
 		909372411651D28000C65840 /* RenderingEngine2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingEngine2.h; sourceTree = "<group>"; };
+		90E190A6167D754E00D72BD8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		90E190B4167D885400D72BD8 /* VboRenderingEngine2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VboRenderingEngine2.cpp; sourceTree = "<group>"; };
+		90E190B5167D885400D72BD8 /* VboRenderingEngine2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VboRenderingEngine2.h; sourceTree = "<group>"; };
 		B48F88481614601900BC97AE /* Exercise3-TouchCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Exercise3-TouchCone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48F884C1614601900BC97AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B48F884E1614601900BC97AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E190A7167D754E00D72BD8 /* QuartzCore.framework in Frameworks */,
 				9093723F1651D20B00C65840 /* OpenGLES.framework in Frameworks */,
 				B48F884D1614601900BC97AE /* UIKit.framework in Frameworks */,
 				B48F884F1614601900BC97AE /* Foundation.framework in Frameworks */,
@@ -66,6 +72,7 @@
 		B48F883D1614601900BC97AE = {
 			isa = PBXGroup;
 			children = (
+				90E190A6167D754E00D72BD8 /* QuartzCore.framework */,
 				B48F88521614601900BC97AE /* Exercise3-TouchCone */,
 				B48F884B1614601900BC97AE /* Frameworks */,
 				B48F88491614601900BC97AE /* Products */,
@@ -105,6 +112,8 @@
 				B48F88731614612600BC97AE /* GLView.m */,
 				909372401651D28000C65840 /* RenderingEngine2.cpp */,
 				909372411651D28000C65840 /* RenderingEngine2.h */,
+				90E190B4167D885400D72BD8 /* VboRenderingEngine2.cpp */,
+				90E190B5167D885400D72BD8 /* VboRenderingEngine2.h */,
 				B48F88531614601A00BC97AE /* Supporting Files */,
 			);
 			path = "Exercise3-TouchCone";
@@ -198,10 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E190A9167D764100D72BD8 /* RenderingEngine2.cpp in Sources */,
 				B48F88591614601A00BC97AE /* main.m in Sources */,
 				B48F885D1614601A00BC97AE /* AppDelegate.m in Sources */,
 				B48F88741614612600BC97AE /* GLView.m in Sources */,
-				909372421651D28000C65840 /* RenderingEngine2.cpp in Sources */,
+				90E190B6167D885400D72BD8 /* VboRenderingEngine2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise3-TouchCone/Exercise3-TouchCone-Prefix.pch";
 				INFOPLIST_FILE = "Exercise3-TouchCone/Exercise3-TouchCone-Info.plist";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -285,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exercise3-TouchCone/Exercise3-TouchCone-Prefix.pch";
 				INFOPLIST_FILE = "Exercise3-TouchCone/Exercise3-TouchCone-Info.plist";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

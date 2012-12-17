@@ -69,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		909B398716698CBE0016F716 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B4E5FEAE1612E0590093D8C1 /* GLView.h */,
+				B4E5FEAF1612E0590093D8C1 /* GLView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		B405B4AC1612E94D007961D8 /* Shader */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +85,12 @@
 				B405B4AF1612E962007961D8 /* Simple.Vert */,
 			);
 			name = Shader;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B4FE0243160FEAD800B84342 = {
 			isa = PBXGroup;
 			children = (
-				B405B4AC1612E94D007961D8 /* Shader */,
 				B4FE0258160FEAD800B84342 /* Exercise2-HelloCone */,
 				B4FE0251160FEAD800B84342 /* Frameworks */,
 				B4FE024F160FEAD800B84342 /* Products */,
@@ -111,8 +120,8 @@
 		B4FE0258160FEAD800B84342 /* Exercise2-HelloCone */ = {
 			isa = PBXGroup;
 			children = (
-				B4E5FEAE1612E0590093D8C1 /* GLView.h */,
-				B4E5FEAF1612E0590093D8C1 /* GLView.m */,
+				909B398716698CBE0016F716 /* Classes */,
+				B405B4AC1612E94D007961D8 /* Shader */,
 				B4FE0261160FEAD800B84342 /* AppDelegate.h */,
 				B4FE0262160FEAD800B84342 /* AppDelegate.mm */,
 				B4FE026F160FECCE00B84342 /* Vector.hpp */,

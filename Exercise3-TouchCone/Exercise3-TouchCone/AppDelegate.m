@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GLView.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,9 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    GLView *glView = [[GLView alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    [self.window addSubview:glView];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

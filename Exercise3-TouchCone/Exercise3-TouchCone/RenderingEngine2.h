@@ -30,8 +30,8 @@ public:
     RenderingEngine2();
     void Initialize(int width, int height) ;
     void Render() const;
-    void UpdateAnimation(float timeStep);
-    void OnRotate (DeviceOrientation newOrientation) ;
+    void UpdateAnimation(float timeStep){};
+    void OnRotate (DeviceOrientation newOrientation){} ;
     void OnFingerUp(ivec2 location) ;
     void OnFingerDown(ivec2 location) ;
     void OnFingerMove(ivec2 oldLocation, ivec2 newLocation) ;

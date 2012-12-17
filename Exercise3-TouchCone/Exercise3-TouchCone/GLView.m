@@ -7,6 +7,7 @@
 //
 
 #import "GLView.h"
+#import <QuartzCore/QuartzCore.h>
 
 static BOOL ForceES1 = NO;
 
@@ -37,14 +38,15 @@ static BOOL ForceES1 = NO;
             return  nil;
         }
         
-        if (api == kEAGLRenderingAPIOpenGLES1)
-        {
-            m_renderingEngine = CreateRender1();
-        }
-        else
-        {
-            m_renderingEngine = CreateRender2();
-        }
+//        if (api == kEAGLRenderingAPIOpenGLES1)
+//        {
+//            m_renderingEngine = CreateRender2();
+//        }
+//        else
+//        {
+        
+            m_renderingEngine = CreateRenderer2();
+//        }
         
         [m_context renderbufferStorage:GL_RENDERBUFFER fromDrawable:eaglLayer];
         
@@ -54,6 +56,8 @@ static BOOL ForceES1 = NO;
         CADisplayLink * displayLink;
         displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(drawView:)];
         [displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+        [[UIDevice currentDevice]beginGeneratingDeviceOrientationNotifications];
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didRotate:) name:UIDeviceOrientationDidChangeNotification object:nil];
     }
     return self;
 }
@@ -81,5 +85,23 @@ static BOOL ForceES1 = NO;
     m_renderingEngine->OnFingerMove(ivec2(oldLocation.x,oldLocation.y), ivec2(currentLocation.x,currentLocation.y));
 }
 
+- (void) drawView: (CADisplayLink*) displayLink
+{
+    if(displayLink != nil)
+    {
+        float elapsedSeconds = displayLink.timestamp - m_timestamp;
+        m_timestamp = displayLink.timestamp;
+        m_renderingEngine->UpdateAnimation(elapsedSeconds);
+    }
+    m_renderingEngine->Render();
+    [m_context presentRenderbuffer:GL_RENDERBUFFER];
+}
+
+- (void) didRotate: (NSNotification*) notification
+{
+    UIDeviceOrientation orientation = [[UIDevice currentDevice]orientation];
+    m_renderingEngine->OnRotate((DeviceOrientation)orientation);
+    [self drawView:nil];
+}
 
 @end

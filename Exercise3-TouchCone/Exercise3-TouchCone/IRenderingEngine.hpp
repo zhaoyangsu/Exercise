@@ -22,9 +22,8 @@ enum DeviceOrientation
     DeviceOrientationFaceDown,
 };
 
-struct IRenderingEngine* CreateRender1();
 
-struct IRenderingEngine* CreateRender2();
+struct IRenderingEngine* CreateRenderer2();
 
 struct IRenderingEngine
 {
